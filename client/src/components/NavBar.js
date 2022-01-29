@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import { Tab, Tabs } from "react-bootstrap";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { useAuth } from "../context/AuthContext";
+
 function NavBar() {
+  const auth = useAuth();
+
   const showMenu = (e) => {
     e.preventDefault();
     console.log("hi");
@@ -13,10 +19,11 @@ function NavBar() {
     var navLinks = document.getElementById("navLinks");
     navLinks.style.right = "-200px";
   }
-  const [open, setOpen] = useState(false);
+  
 
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
+  const onOpenModal = () => auth.setOpen(true);
+  const onCloseModal = () => auth.setOpen(false);
+  
 
   return (
     <>
@@ -25,24 +32,29 @@ function NavBar() {
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onClick={hideMenu}></i>
           <ul>
-            <li >
+            <li>
               <a href="/">Home</a>
             </li>
             <li>
               <a>About</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="/profile">My Profile</a>
             </li>
-            <li onClick={onOpenModal}>
-              <a>Sign in</a>
-              
-                <Modal open={open} onClose={onCloseModal} center >
+            {auth.user ? (
+              <li onClick={auth.logout}>
+                <a>Logout</a>
+              </li>
+            ) : (
+              <li onClick={onOpenModal}>
+                <a>Sign in</a>
+
+                <Modal open={auth.open} onClose={onCloseModal} center>
                   <h2>Welcome!</h2>
                   <TabBar />
                 </Modal>
-            
-            </li>
+              </li>
+            )}
           </ul>
         </div>
 
@@ -55,11 +67,52 @@ function NavBar() {
 function TabBar() {
   const [password, setpassword] = useState("");
   const [email, setemail] = useState("");
+  const [name, setname] = useState("");
+  const [city, setcity] = useState("");
+  const [rank, setrank] = useState();
+  const auth = useAuth();
+  const register = async (e) => {
+    e.preventDefault();
+    const toastId = toast.loading("Loading...");
+    try {
+      const data = {
+        name,
+        email,
+        password,
+        city,
+        rank,
+      };
+      const res = await axios.post("http://localhost:5000/user/register", data);
+      if (res.data.success) {
+        toast.success(res.data.msg, { id: toastId });
+      }
+    } catch (error) {
+      toast.error(error.response.data.msg, { id: toastId });
+    }
+  };
 
+  const loginUser = async (e) => {
+    e.preventDefault();
+    const toastId = toast.loading("Loading...");
+    try {
+      const res = await auth.login(email, password);
+      if (res.success) {
+        toast.success("Successfully Logged In!", { id: toastId });
+        //console.log(res.data.category);
+        //navigate(`/admin/sdd`);
+      } else {
+        toast.error(res.message, { id: toastId });
+      }
+    } catch (error) {
+      toast.error("Something went wrong", {
+        id: toastId,
+      });
+    }
+  };
   return (
-    <div >
+    <div>
       <Tabs
-        defaultActiveKey="register"
+        defaultActiveKey="login"
         id="uncontrolled-tab-example"
         className="mb-3"
       >
@@ -68,6 +121,15 @@ function TabBar() {
             <input
               type="text"
               name=""
+              value={name}
+              onChange={(e) => setname(e.target.value)}
+            />
+            <label>Name</label>
+          </div>
+          <div className="user-box black-text">
+            <input
+              type="text"
+              name=""
               value={email}
               onChange={(e) => setemail(e.target.value)}
             />
@@ -75,7 +137,7 @@ function TabBar() {
           </div>
           <div className="user-box black-text">
             <input
-              type="text"
+              type="password"
               name=""
               value={password}
               onChange={(e) => setpassword(e.target.value)}
@@ -86,14 +148,26 @@ function TabBar() {
             <input
               type="text"
               name=""
-              
+              value={city}
+              onChange={(e) => setcity(e.target.value)}
             />
-            <label>Confirm Password</label>
+            <label>City</label>
           </div>
-          <button className="deadline">Sign Up!</button>
+          <div className="user-box black-text">
+            <input
+              type="text"
+              name=""
+              value={rank}
+              onChange={(e) => setrank(e.target.value)}
+            />
+            <label>Rank</label>
+          </div>
+          <button className="deadline" onClick={register}>
+            Sign Up!
+          </button>
         </Tab>
         <Tab eventKey="login" title="Login">
-        <div className="user-box black-text">
+          <div className="user-box black-text">
             <input
               type="text"
               name=""
@@ -104,14 +178,16 @@ function TabBar() {
           </div>
           <div className="user-box black-text">
             <input
-              type="text"
+              type="password"
               name=""
               value={password}
               onChange={(e) => setpassword(e.target.value)}
             />
             <label>Password</label>
           </div>
-          <button className="deadline">Log In</button>
+          <button className="deadline" onClick={loginUser}>
+            Log In
+          </button>
         </Tab>
       </Tabs>
     </div>

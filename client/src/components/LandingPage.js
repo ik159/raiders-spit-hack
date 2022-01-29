@@ -7,6 +7,8 @@ import axios from "axios";
 import { easeCubic } from "d3-ease";
 import { Container, Col, Row } from "react-bootstrap";
 import CollegeCard from "./CollegeCard";
+import { useAuth } from "../context/AuthContext";
+
 function calcCrow(lat1, lon1, lat2, lon2) {
   console.log(lat1);
   console.log(lat1);
@@ -34,6 +36,7 @@ function toRad(Value) {
 }
 
 function LandingPage() {
+  const auth = useAuth();
   const [city, setCity] = useState("Mumbai");
   const [citylong, setcitylong] = useState(72.8777);
   const [citylang, setcitylang] = useState(19.0760);
@@ -90,7 +93,7 @@ function LandingPage() {
         <div className="text-box">
           <>
             <div className="inner-text left">
-              <h3>Select the best for you!</h3>
+              {auth.user ? <h3>Hi <span className="username">{auth.user.name}</span>, enter rightaway!</h3> : <h3>Welcome, choose your city!</h3>}
               <div className="user-box">
                 <input
                   type="text"

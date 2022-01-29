@@ -213,7 +213,12 @@ select {
  background-color: #fff3f3;
  padding: 15px 0;
 }
-
+.username {
+  background: linear-gradient(to right, #b721ff 0%, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 // Icon Gradint
 .fa-gradient {
   font-size: 25px;
@@ -393,3 +398,4 @@ background: #f0f0f0;
 .comment-form button{
   margin: 10px 0;
 }
+
