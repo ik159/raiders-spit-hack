@@ -4,6 +4,7 @@ import { features } from "../data/CollegeData";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 
 
@@ -18,6 +19,14 @@ function CollegeCard({college}) {
     if(!auth.user){
       toast.error("Please Login to Subscribe", { id: toastId });
       auth.setOpen(true);
+    }
+    try {
+      const data ={name : college.name, email: auth.user.email}
+      const res = await axios.post("http://localhost:5000/user/subscribe" ,data)
+      if(res.data.success) toast.success(res.data.msg, { id: toastId });
+    } catch (error) {
+      //console.log(error.response);
+      toast.error(error.response.data.msg, { id: toastId });
     }
   }
   return (

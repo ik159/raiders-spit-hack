@@ -31,12 +31,12 @@ const userRegister = async (req, res) => {
       console.log(savedUser);
       res.send({user : user._id , success : true, msg : "Successfully Registered!"});
       const status = "Registration Successful!";
-    const body = "You have successfully registered on our website Maha-Dhoondh!";
+    const body = "You have successfully registered on our website Finder-Binder";
     const message = constructTemplate(savedUser.name,status,body);
     
     main(
         savedUser.email,
-      "Registration at Maha-Dhoondh",
+      "Registration at Finder-Binder",
       message
     );
       

@@ -13,7 +13,7 @@ router.get('/user/fetchMe' , verify , async (req , res) => {
  })
  router.post('/user/subscribe', async (req , res) => {
    try {
-    const collegeFind = await  College.findOne({collegeid : req.body.collegeid});
+    const collegeFind = await  College.findOne({name : req.body.name});
     if(!collegeFind) res.status(400).send({msg : "College doesnt exist"});
   
     collegeFind.subscribers.push(req.body.email);

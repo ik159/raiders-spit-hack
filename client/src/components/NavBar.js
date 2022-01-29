@@ -4,7 +4,7 @@ import { Tab, Tabs } from "react-bootstrap";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
-
+import logo from '../assets/spit-logo.png'
 function NavBar() {
   const auth = useAuth();
 
@@ -28,7 +28,7 @@ function NavBar() {
   return (
     <>
       <nav>
-        <a>logo here</a>
+        <a><img src={logo}/> Finder-Binder</a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onClick={hideMenu}></i>
           <ul>
