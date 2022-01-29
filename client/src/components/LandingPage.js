@@ -10,10 +10,10 @@ import CollegeCard from "./CollegeCard";
 import { useAuth } from "../context/AuthContext";
 
 function calcCrow(lat1, lon1, lat2, lon2) {
-  console.log(lat1);
-  console.log(lat1);
-  console.log(lat2);
-  console.log(lon2);
+  // console.log(lat1);
+  // console.log(lat1);
+  // console.log(lat2);
+  // console.log(lon2);
   var R = 6371; // km
   var dLat = toRad(lat2 - lat1);
   //console.log(dLat);
@@ -222,7 +222,7 @@ function CollegeList({ citylang, citylong, radius, city }) {
                 u.coordinates[0],
                 u.coordinates[1]
               );
-              console.log(d);
+              //console.log(d);
               if (radius > d) return u;
             })
             .map((college, ind) => (
