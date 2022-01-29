@@ -30,7 +30,7 @@ function NavBar() {
                         <a>About</a>
                     </li>
                     <li>
-                        <a>Conatct</a>
+                        <a>Contact</a>
                     </li>
                     <li>
                         <a>Sign in</a>

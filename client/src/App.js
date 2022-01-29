@@ -1,4 +1,5 @@
 import "./App.scss";
+import CollegeList from "./components/CollegeList";
 import LandingText from './components/LandingText'
 
 import NavBar from "./components/NavBar";
@@ -14,6 +15,7 @@ function App() {
           <LandingText />
         </div>
       </div>
+      <CollegeList />
     </div>
   );
 }

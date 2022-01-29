@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMapGL, { Marker, Popup, FlyToInterpolator } from 'react-map-gl';
-//import  {features} from "../data/GeographicalData";
+import  {features} from "../data/CollegeData";
 import axios from 'axios';
 import { easeCubic } from 'd3-ease';
 function LandingText() {
@@ -30,7 +30,7 @@ function LandingText() {
                 ...viewport,
                 longitude: res.data.features[0].geometry.coordinates[0],
                 latitude: res.data.features[0].geometry.coordinates[1],
-                zoom: 14,
+                zoom: 12,
                 transitionDuration: 5000,
                 transitionInterpolator: new FlyToInterpolator(),
                 transitionEasing: easeCubic
@@ -81,35 +81,35 @@ function LandingText() {
                     setViewport(viewport);
                 }}
             >
-                {/* {features.map(park => (
+                {features.map((college, ind) => (
           <Marker
-            key={park.properties.PARK_ID}
-            latitude={park.geometry.coordinates[1]}
-            longitude={park.geometry.coordinates[0]}
+            key={ind}
+            latitude={college.coordinates[0]}
+            longitude={college.coordinates[1]}
           >
             <button
               className="marker-btn"
               onClick={e => {
                 e.preventDefault();
-                setSelectedPark(park);
+                setSelectedPark(college);
               }}
             >
-              <i className="fa fa-map-marker"></i>
+              <i className="fa fa-map-marker fa-gradient"></i>
             </button>
           </Marker>
-        ))} */}
+        ))}
 
                 {selectedPark ? (
                     <Popup
-                        latitude={selectedPark.geometry.coordinates[1]}
-                        longitude={selectedPark.geometry.coordinates[0]}
+                        latitude={selectedPark.coordinates[0]}
+                        longitude={selectedPark.coordinates[1]}
                         onClose={() => {
                             setSelectedPark(null);
                         }}
                     >
-                        <div>
-                            <h2>{selectedPark.properties.NAME}</h2>
-                            <p>{selectedPark.properties.DESCRIPTIO}</p>
+                        <div className='popup'>
+                            <p>{selectedPark.name}</p>
+                            <p>{selectedPark.city}</p>
                         </div>
                     </Popup>
                 ) : null}
