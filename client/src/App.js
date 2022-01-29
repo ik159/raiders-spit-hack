@@ -1,22 +1,18 @@
 import "./App.scss";
-import CollegeList from "./components/CollegeList";
-import LandingText from './components/LandingText'
-
-import NavBar from "./components/NavBar";
-
+import LandingPage from "./components/LandingPage";
+import CollegeDetail from "./components/CollegeDetail";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <div className="App">
-      <div className="header">
-        <NavBar />
-        <div className="text-box">
-          <LandingText />
-        </div>
-      </div>
-      <CollegeList />
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<LandingPage />} />
+    <Route path="/college/:id" element={<CollegeDetail />} />
+    </Routes>
+    
+    </BrowserRouter>
+    
   );
 }
 

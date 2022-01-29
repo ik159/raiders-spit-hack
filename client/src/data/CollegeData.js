@@ -7,8 +7,10 @@ export const features = [
         "coordinates": [13.653260,79.462578],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
-
+        "deadline": "22-02-2022",
+        "cutoffrank" : 2500,
+        "rating" : 4.23,
+        "ranking" : 1
     },
     {
         "name": "Sri Sathya Sai Institute of Higher Learning",
@@ -18,7 +20,10 @@ export const features = [
         "coordinates": [14.1018, 77.8024],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.43,
+        "ranking" : 2
     },
     {
         "name": "International Institute of Information Technology",
@@ -28,7 +33,10 @@ export const features = [
         "coordinates": [17.4449, 78.3498],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 2800,
+        "rating" : 4.53,
+        "ranking" : 3
     },
     {
         "name": "Gandhi Institute of Technology and Management",
@@ -38,7 +46,10 @@ export const features = [
         "coordinates": [17.781976027423596, 83.37745995575938],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 5000,
+        "rating" : 4.10,
+        "ranking" : 4
     },
     {
         "name": "North Eastern Regional Institute of Science and Technology",
@@ -48,7 +59,10 @@ export const features = [
         "coordinates": [27.13149745983239, 93.74080155865269],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 4800,
+        "rating" : 4.43,
+        "ranking" : 5
     },
     {
         "name": "Bihar Yoga Bharati",
@@ -58,7 +72,10 @@ export const features = [
         "coordinates": [25.386215585751504, 86.46761451199596],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 50,
+        "rating" : 4.9,
+        "ranking" : 6
     },
     {
         "name": "Nava Nalanda Mahavihara",
@@ -68,7 +85,10 @@ export const features = [
         "coordinates": [25.12932844617959, 85.44539611190692],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 8000,
+        "rating" : 3.99,
+        "ranking" : 7
     },
     {
         "name": "Punjab Engineering College",
@@ -78,7 +98,10 @@ export const features = [
         "coordinates": [31.125781261606683, 76.69947177459784],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 4100,
+        "rating" : 4.19,
+        "ranking" : 8
     },
     
     {
@@ -89,7 +112,10 @@ export const features = [
         "coordinates": [23.044428510171436, 72.56919001466154],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3969,
+        "rating" : 3.87,
+        "ranking" : 9
     },
     {
         "name": "Sumandeep Vidyapeeth",
@@ -99,7 +125,10 @@ export const features = [
         "coordinates": [22.307815413610637, 73.39857876859311],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 4269,
+        "rating" : 4.62,
+        "ranking" : 10
     },
     {
         "name": "National Dairy Research Institute",
@@ -109,7 +138,10 @@ export const features = [
         "coordinates": [29.702234906276882, 76.98459579827052],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 896,
+        "rating" : 4.87,
+        "ranking" : 11
     },
     {
         "name": "National Brain Research Centre",
@@ -119,7 +151,10 @@ export const features = [
         "coordinates": [28.333300480073294, 76.93881413582395],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 8596,
+        "rating" : 3.90,
+        "ranking" : 12
     },
     {
         "name": "Maharishi Markandeshwar University",
@@ -129,7 +164,10 @@ export const features = [
         "coordinates": [30.251899220736785, 77.04772319849334],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 1599,
+        "rating" : 4.20,
+        "ranking" : 13
     },
     {
         "name": "Birla Institute of Technology, Mesra",
@@ -139,7 +177,10 @@ export const features = [
         "coordinates": [23.412974251205373, 85.44020136477029],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 999,
+        "rating" : 4.69,
+        "ranking" : 14
     },
     {
         "name": "Indian School of Mines",
@@ -149,7 +190,10 @@ export const features = [
         "coordinates": [23.814923236395167, 86.44118065749609],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 452,
+        "rating" : 4.89,
+        "ranking" : 15
     },
     {
         "name": "Indian Institute of Science",
@@ -159,7 +203,10 @@ export const features = [
         "coordinates": [13.017226034588306, 77.56633214546575],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 99,
+        "rating" : 4.93,
+        "ranking" : 16
     },
     {
         "name": "Manipal Academy of Higher Education",
@@ -169,9 +216,480 @@ export const features = [
         "coordinates": [13.353844211064464, 74.78493837013902],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022"
+        "deadline": "22-02-2022",
+        "cutoffrank" : 969,
+        "rating" : 4.59,
+        "ranking" : 17
+    },
+    {
+        "name": "National Institute of Mental Health and Neuro Sciences",
+        "address": " National Institute of Mental Health and Neuro Sciences, P.B. No. 2900 Hosur Road",
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "coordinates": [12.942554658044289, 77.60881978491017],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 859,
+        "rating" : 4.14,
+        "ranking" : 18
+    },
+    {
+        "name": "Swami Vivekananda Yoga Anusandhana Samsthana",
+        "address": "Swami Vivekananda Yoga Anusandhana Samsthana, No.9, Appajappa Agrahara, Chamarahpet",
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "coordinates": [13.3543870255731, 74.78513148902009],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 856,
+        "rating" : 4.29,
+        "ranking" : 19
+    },
+    {
+        "name": "Jawaharlal Nehru Centre for Advanced Scientific Research",
+        "address": "Jawaharlal Nehru Centre for Advanced Scientific Research",
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "coordinates": [13.069048341068324, 77.60992133150594],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3658,
+        "rating" : 4.11,
+        "ranking" : 20
+    },
+    {
+        "name": "International Institute of Information Technology",
+        "address": "International Institute of Information Technology, 26/C, Opp. INFOSYS (Gate I), Electronic City, Hosur Road",
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "coordinates": [12.845629217174057, 77.66313032450493],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 5269,
+        "rating" : 4.10,
+        "ranking" : 21
+    },
+    {
+        "name": "K.L.E Academy of Higher Education and Research",
+        "address": "K.L.E Academy of Higher Education and Research, JNMC Campus, Nehru Nagar",
+        "city":"Bengaum",
+        "state":"Karnataka",
+        "coordinates": [15.885277086026834, 74.51780974045276],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 859,
+        "rating" : 4.1,
+        "ranking" : 22
+    },
+    {
+        "name": "Sri Devaraj Urs Academy of Higher Education and Research",
+        "address": "Sri Devaraj Urs Academy of Higher Education and Research, B H Road, Tamaka ",
+        "city":"Kolar",
+        "state":"Karnataka",
+        "coordinates": [13.133135304800419, 78.1748948086768],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 2678,
+        "rating" : 4.08,
+        "ranking" : 23
+    },
+    {
+        "name": "Yenepoya University",
+        "address": "Yenepoya University Bibi Alab-i Road, Deralakatte",
+        "city":"Mangalore",
+        "state":"Karnataka",
+        "coordinates": [12.87559470568035, 74.84228795788731],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 2589,
+        "rating" : 3.93,
+        "ranking" : 24
+    },
+    {
+        "name": "BLDE University",
+        "address": "BLDE University, Bangaramma Sajjan Campus,Sholapur Road",
+        "city":"Bijapur",
+        "state":"Karnataka",
+        "coordinates": [16.8459499531811, 75.71276360998326],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 1458,
+        "rating" : 4.21,
+        "ranking" : 25
+    },
+    {
+        "name": "Jagadguru Sri Shivarathreeswara University",
+        "address": "Jagadguru Sri Shivarathreeswara University (JSSU), Dr. Shivarathri Rajendra Circle, Ramanuja Road",
+        "city":"Mysore",
+        "state":"Karnataka",
+        "coordinates": [12.302428979985937, 76.6549219244101],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 4259,
+        "rating" : 4.01,
+        "ranking" : 26
+    },
+    {
+        "name": "Sri Siddhartha Academy of Higher Education",
+        "address": "Sri Siddhartha Academy of Higher Education, B.H. Road, Siddarthanagar, Agalkote, Tumkur Taluk, Tumkur District",
+        "city":"Tumkur",
+        "state":"Karnataka",
+        "coordinates": [13.34573152798485, 77.05657557062585],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3685,
+        "rating" : 4.22,
+        "ranking" : 27
+    },
+    {
+        "name": "Nitte University",
+        "address": "Nitte University, 7th Floor, Rama Bhavan Complex, Kodialbail",
+        "city":"Mangalore",
+        "state":"Karnataka",
+        "coordinates": [12.808431502143032, 74.88800437846824],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.56,
+        "ranking" : 28
+    },
+    {
+        "name": "Christ College",
+        "address": "Christ College, Hosur Road, Bangalore – 560029, Karnataka.",
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "coordinates": [12.936988924229466, 77.6064033319247],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.71,
+        "ranking" : 29
+    },
+    {
+        "name": "Kerala Kalamandalam",
+        "address": "Kerala Kalamandalam, Vallathol Nagar, Cheruthuruthy",
+        "city":"Thrissur",
+        "state":"Kerala",
+        "coordinates": [10.736799591172176, 76.27898969795108],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.09,
+        "ranking" : 30
+    },
+    {
+        "name": "Indian Institute of Space Science and Technology",
+        "address": "Indian Institute of Space Science and Technology (IISST), Vikram Sarabhai Space Centre, Veli",
+        "city":"Thiruvananthapuram",
+        "state":"Kerala",
+        "coordinates": [8.63588028841578, 77.03152512273027],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.08,
+        "ranking" : 31
+    },
+    {
+        "name": "Lakshmibai National Institute of Physical Education",
+        "address": "Lakshmibai National Institute of Physical Education,Shaktinagar",
+        "city":"Gwalior",
+        "state":"Madhya Pradesh",
+        "coordinates": [26.221320518203374, 78.19298386670845],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.03,
+        "ranking" : 32
+    },
+    {
+        "name": "Indian Institute of Information Technology and Management",
+        "address": "Indian Institute of Information Technology and Management",
+        "city":"Gwalior",
+        "state":"Madhya Pradesh",
+        "coordinates": [26.250221629096238, 78.17439625083881],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.10,
+        "ranking" : 33
+    },
+    {
+        "name": "Bharati Vidyapeeth",
+        "address": "Bharati Vidyapeeth, Lal Bahadur Shastri Marg",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.512980703059483, 73.84328774107571],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 5210,
+        "rating" : 4.78,
+        "ranking" : 34
+    },
+    {
+        "name": "Indira Gandhi Institute of Development Research",
+        "address": "Indira Gandhi Institute of Development Research, Gen. Vaidya Marg, Goregaon (E)",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.167835682287137, 72.8773285184985],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.14,
+        "ranking" : 35
+    },
+    {
+        "name": "Defence Institute Of Advanced Technology",
+        "address": "Defence Institute of Advanced Technology (formerly Institute of Armament Technology),Girinagar",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.4246016873542, 73.75880214845671],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 2589,
+        "rating" : 4.63,
+        "ranking" : 36
+    },
+    {
+        "name": "Central Institute of Fisheries Education",
+        "address": "Central Institute of Fisheries Education, PB No. 7392, Kakori Camp, Jaiprakash Road,Versova",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.14047883809299, 72.81631301795477],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.58,
+        "ranking" : 37
+    },
+    {
+        "name": "Deccan College Post-Graduate and Research Institute",
+        "address": "Deccan College Post-Graduate and Research Institute",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.5502627146788, 73.87323564108517],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 452,
+        "rating" : 4.78,
+        "ranking" : 38
+    },
+    {
+        "name": "Tata Institute of Social Sciences",
+        "address": "Tata Institute of Social Sciences, Deonar",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.045588651840912, 72.91248395655644],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.56,
+        "ranking" : 39
+    },
+    {
+        "name": "International Institute for Population Sciences",
+        "address": "International Institute for Population Sciences,Govandi Station Road, Deonar",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.050156518771576, 72.91487097190092],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.14,
+        "ranking" : 40
+    },
+    {
+        "name": "Tilak Maharashtra Vidyapeeth",
+        "address": "Tilak Maharashtra Vidyapeeth, Gultekadi",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.494138079246632, 73.86501874107086],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 4896,
+        "rating" : 4.11,
+        "ranking" : 41
+    },
+    {
+        "name": "Gokhale Institute of Politics & Economics",
+        "address": "Gokhale Institute of Politics & Economics",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.521134839284347, 73.8381134053479],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 569,
+        "rating" : 4.78,
+        "ranking" : 42
+    },
+    {
+        "name": "SYMBIOSIS International University",
+        "address": "SYMBIOSIS International University, Symbiosis Vishwabhavan, Senapati Bapat Road",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.52368025628387, 73.83179517755856],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 789,
+        "rating" : 4.74,
+        "ranking" : 43
+    },
+    {
+        "name": "Tata Institute of Fundamental Research",
+        "address": "Tata Institute of Fundamental Research, Homi Bhabha Road",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [18.907956691388243, 72.80979016392399],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.57,
+        "ranking" : 44
+    },
+    {
+        "name": "Padmashree Dr. D.Y.Patil Vidyapeeth",
+        "address": "Padmashree Dr. D.Y.Patil Vidyapeeth, Nerul, Navi Mumbai",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.04284006564489, 73.0239772486158],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.36,
+        "ranking" : 45
+    },
+    {
+        "name": "Narsee Monjee Institute of Management Studies",
+        "address": "Narsee Monjee Institute of Management Studies, V.L. Mehta Road, vile Parle (W)",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.102664352298014, 72.843521622606],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.02,
+        "ranking" : 46
+    },
+    {
+        "name": "Dr.D.Y.Patil Vidyapeeth",
+        "address": "Dr.D.Y.Patil Vidyapeeth, Pimpri ",
+        "city":"Pune",
+        "state":"Maharashtra",
+        "coordinates": [18.623978062019052, 73.8199365456106],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 5122,
+        "rating" : 4.01,
+        "ranking" : 47
+    },
+    {
+        "name": "Pravara Institute of Medical Sciences",
+        "address": "Pravara Institute of Medical Sciences, Loni, Distt",
+        "city":"Ahmednagar",
+        "state":"Maharashtra",
+        "coordinates": [19.57899023719169, 74.45536105764015],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.51,
+        "ranking" : 48
+    },
+    {
+        "name": "Datta Meghe Institute of Medical Sciences",
+        "address": "Datta Meghe Institute of Medical Sciences",
+        "city":"Nagpur",
+        "state":"Maharashtra",
+        "coordinates": [21.120864538802223, 79.06059338176293],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.50,
+        "ranking" : 49
+    },
+    {
+        "name": "Krishna Institute of Medical Sciences",
+        "address": "Krishna Institute of Medical Sciences, Karad",
+        "city":"Satara ",
+        "state":"Maharashtra",
+        "coordinates": [17.26123895979024, 74.17652180214078],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.63,
+        "ranking" : 50
+    },
+    {
+        "name": "Homi Bhabha National Institute",
+        "address": "Homi Bhabha National Institute, Knowledge Management Group BARC Central Complex",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.03535458664835, 72.9254423427999],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.41,
+        "ranking" : 51
+    },
+    {
+        "name": "D. Y. Patil Medical College",
+        "address": "D. Y. Patil Medical College, 869, ‘E’ Kasba Bavada",
+        "city":"Kolhapur",
+        "state":"Maharashtra",
+        "coordinates": [16.729502487164066, 74.24411126626109],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.96,
+        "ranking" : 52
+    },
+    {
+        "name": "MGM Institute of Health Sciences",
+        "address": "MGM Institute of Health Sciences,MGM Campus, Sector-18, Kamothe",
+        "city":"Mumbai",
+        "state":"Maharashtra",
+        "coordinates": [19.017991342795813, 73.10539731684936],
+        "cutoff": 34,
+        "category":"Engineering",
+        "deadline": "22-02-2022",
+        "cutoffrank" : 3600,
+        "rating" : 4.28,
+        "ranking" : 53
     }
-];
+]
 
 export default {
   features,
