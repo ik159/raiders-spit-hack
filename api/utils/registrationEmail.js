@@ -122,6 +122,14 @@ const constructTemplate = (name , status , body) => {
                                                                                                     style="margin: 20px 0 30px 0;font-size: 15px;text-align: center;color: #fff;">
                                                                                                     ${body}
                                                                                                 </p>
+                                                                                                <p
+                                                                                                    style="margin: 5px 0 30px 0;font-size: 15px;text-align: left;color: #fff;">
+                                                                                                    Regards, 
+                                                                                                </p>
+                                                                                                <p
+                                                                                                    style="margin: 20px 0 30px 0;font-size: 15px;text-align: left;color: red;">
+                                                                                                    Finder-Binder
+                                                                                                </p>
                                                                                                 <div
                                                                                                     style="font-weight: 200; text-align: center; margin: 25px;">
                                                                                                     <a style="padding:0.6em 1em;border-radius:600px;color:#ffffff;font-size:14px;text-decoration:none;font-weight:bold"
@@ -172,7 +180,7 @@ const constructTemplate = (name , status , body) => {
                                                                                 style="border-top:1px solid #00A8CC;padding:12px 0px 20px 0px;text-align:center;color:#4c4c4c;font-weight:200;font-size:12px;line-height:18px">
                                                                                 <img style="width:100px;height:100%;object-fit:contain;background: #1a1a1a"
                                                                                 
-                                                                                    src="https://cdn.dribbble.com/users/786706/screenshots/11486313/media/0ebc907f5750f2851d9516197c590876.jpg?compress=1&resize=400x300">
+                                                                                    src="https://i.imgur.com/1OlQo7U.png">
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
