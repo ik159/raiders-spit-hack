@@ -32,7 +32,7 @@ const CollegeSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
-  coordiates: [Number],
+  coordinates: [Number],
   subscribers : [String],
 });
 

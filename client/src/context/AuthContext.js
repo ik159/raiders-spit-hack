@@ -30,7 +30,7 @@ export default function AuthProvider({ children }) {
 
           setuser(res.data.data);
           setLoading(false);
-          navigate(`/profile`)
+          //navigate(`/profile`)
         }
         // } else {
         //   // CHANGE THIS

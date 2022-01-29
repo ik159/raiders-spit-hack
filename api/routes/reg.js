@@ -1,4 +1,5 @@
 const { User } = require("../models/user");
+const { College } = require("../models/college");
 const main = require("../utils/confirmationEmail");
 const constructTemplate = require("../utils/registrationEmail");
 const bcrypt = require('bcryptjs');
@@ -64,8 +65,39 @@ const userLogin = async (req,res) => {
 
 }
 
+const collegeRegister = async (req, res) => {
+   const findEmail = await College.findOne({name : req.body.name});
+      if(findEmail) return res.status(400).send({msg : "College already registered"})
+
+
+
+       const  college = new College({
+           collegeid : req.body.collegeid,
+           name : req.body.name,
+           address : req.body.address,
+           city : req.body.city,
+           state: req.body.state,
+           ranking: req.body.ranking,
+           rating: req.body.rating,
+           cutoffrank: req.body.cutoffrank,
+           coordinates :req.body.coordinates
+        });
+     
+
+  try {
+     const savedCollege = await college.save();
+     console.log(savedCollege);
+     res.send({user : savedCollege._id , success : true, msg : "Successfully Registered!"}); 
+  } catch (error) {
+     console.log(error);
+     res.status(400).send({msg : error});
+  }
+ 
+};
+
 
 module.exports = {
   userRegister,
-  userLogin
+  userLogin,
+  collegeRegister
 };
