@@ -9,8 +9,10 @@ const firebaseConfig = {
   appId: "1:14046125032:web:6f712b2cab4da78440e25d",
   measurementId: "G-E00J4Q5T1Y"
   };
-  const app = firebase.initializeApp(firebaseConfig);
-
-
-
-export default app;
+  if(firebase.messaging.isSupported()){
+    firebase.initializeApp(firebaseConfig);
+    console.log("is supported")
+  }else{
+    console.log("not supported")
+  }
+  export default firebase

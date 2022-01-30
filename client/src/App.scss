@@ -185,6 +185,7 @@ nav .fa{
 select {
   border-image: linear-gradient(to right, #b721ff 0%, red 100%);
   border-image-slice: 1;
+  color: white;
 }
 .hero-btn{
   background-color: transparent;
@@ -261,8 +262,8 @@ select {
 .filters{
   width: 80%;
   display: flex;
-  margin: 20px auto;
-  margin-top: 30px;
+  margin: 0px auto;
+  padding-top: 30px;
   justify-content: space-between;
 }
 .apply-btn{
@@ -399,3 +400,8 @@ background: #f0f0f0;
   margin: 10px 0;
 }
 
+.filters-dad{
+  
+  width: 100%;
+  background-color: #fff3f3;
+}

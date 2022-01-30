@@ -37,9 +37,9 @@ function toRad(Value) {
 
 function LandingPage() {
   const auth = useAuth();
-  const [city, setCity] = useState("Mumbai");
-  const [citylong, setcitylong] = useState(72.8777);
-  const [citylang, setcitylang] = useState(19.0760);
+  const [city, setCity] = useState("Pune");
+  const [citylong, setcitylong] = useState(73.8567);
+  const [citylang, setcitylang] = useState(18.5204);
   const [radius, setradius] = useState(20);
   const [cutoffrank, setcutoffrank] = useState(9569);
   const [rating, setrating] = useState(3.80);
@@ -125,7 +125,7 @@ function LandingPage() {
                       u.coordinates[0],
                       u.coordinates[1]
                     );
-                    console.log(d);
+                    //console.log(d);
                     if (radius > d && u.cutoffrank < cutoffrank && u.rating > rating) return u;
                   })
                   .map((college, ind) => {
@@ -167,6 +167,7 @@ function LandingPage() {
           </>
         </div>
       </div>
+      <div className="filters-dad">
       <div className="filters">
         <div className="user-box black-text">
           <input
@@ -197,13 +198,39 @@ function LandingPage() {
         </div>
         <button className="deadline apply-btn">Apply</button>
       </div>
+      </div>
       <CollegeList
         citylang={citylang}
         citylong={citylong}
         radius={radius}
         city={city}
       />
+      <div className="college-list personal">
       <h1>Personal Recommendation For You</h1>
+      <Container>
+        <Row>
+        {features
+            .filter((u) => {
+              let d = calcCrow(
+                citylang,
+                citylong,
+                u.coordinates[0],
+                u.coordinates[1]
+              );
+              
+              if (radius > d) return u;
+            }).slice(1,4).reverse()
+            .map((college, ind) => (
+              
+              <Col xs="4">
+              <CollegeCard key={ind} college={college} />
+            </Col>
+              
+            ))}
+        </Row>
+      </Container>
+    
+      </div>
     </div>
   );
 }
