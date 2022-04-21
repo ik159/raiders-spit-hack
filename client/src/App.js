@@ -8,6 +8,7 @@ import AuthProvider, { useAuth } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
 import firebase from './firebase';
 import React from 'react';
+import MySubs from "./components/MySubs";
 
 const fcm_server_key = "AAAAA0U22-g:APA91bGuvESZoZOOGsFlSrbHxfvvzsExk1BOx6Hm--6NDe188g50B0jRDvKtWrfDp8LD6M9MZSYtyRW_iryotWIXrtCb3phiAynovISpyvrDduQbQPOdy9VIAj6RKKm97AbF0HELP-r8";
 
@@ -60,6 +61,15 @@ function App() {
             element={
               <PrivateRoute>
                 <Profile />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            exact
+            path="/mysubs"
+            element={
+              <PrivateRoute>
+                <MySubs />
               </PrivateRoute>
             }
           />

@@ -12,14 +12,17 @@ var admin = require("firebase-admin");
 var serviceAccount = require("./spit-service-acc.json");
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount),
 });
 
-function sendMessage(payload){
-  admin.messaging().sendAll([payload]).then(function(response) {
+function sendMessage(payload) {
+  admin
+    .messaging()
+    .sendAll([payload])
+    .then(function (response) {
       console.log("Successfully sent message:", response);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.log("Error sending message:", error);
     });
 }
@@ -31,18 +34,65 @@ router.get("/user/fetchMe", verify, async (req, res) => {
   const userfind = await User.findById(req.user);
   res.json({ data: userfind, success: true });
 });
+router.get("/getCollegeById", async (req, res) => {
+  const college = await College.findOne({ collegeid : req.body.collegeid })
+  res.json({ data: college, success: true });
+});
+router.get("/getAllColleges", verify, async (req, res) => {
+  const colleges = await User.findById(req.user);
+  res.json({ data: colleges, success: true });
+});
+router.get("/getsubs", verify, async (req, res) => {
+  const user = await User.findById(req.user).populate("subscribedTo");
+  res.json({ data: user, success: true });
+});
 
-router.post("/user/subscribe", async (req, res) => {
+router.post("/user/subscribe", verify, async (req, res) => {
   try {
-    const collegeFind = await College.findOne({ name: req.body.name });
+    //const token = req.headers["authorization"];
+    const findUser = await User.findById(req.user);
+
+    console.log("here", findUser);
+    const { eventID, collegeid } = req.body;
+    const collegeFind = await College.findOne({
+      collegeid: req.body.collegeid,
+    });
     if (!collegeFind)
       return res.status(400).send({ msg: "College doesnt exist" });
-    const emailCheck = await College.find({
-      name: req.body.name,
-      subscribers: req.body.email,
+    const emailCheck = await College.findOne(
+      { collegeid },
+      {
+        subscribers: 1,
+      }
+    );
+    emailCheck.subscribers.forEach((subs) => {
+      if (subs.toString() == findUser._id.toString()) {
+        return res.status(400).send({ msg: "Already Subscribed!" });
+      }
+      
     });
-    if (emailCheck.length > 0)
-      return res.status(400).send({ msg: "Already Subscribed!" });
+    userSubscribe = await User.findOneAndUpdate(
+      {
+        _id: findUser._id
+      },
+      {
+        $addToSet: { subscribedTo: collegeFind._id },
+      }
+    );
+    collegeSubscribed = await College.findOneAndUpdate(
+      {
+        // eventID,
+        collegeid,
+      },
+      {
+        $addToSet: { subscribers: findUser._id },
+      }
+    );
+    return res.status(200).send({
+      success: true,
+      msg: "Subscribed",
+      data: collegeSubscribed,
+    });
     collegeFind.subscribers.push(req.body.email);
     await collegeFind.save();
     const userfind = await User.findOne({ email: req.body.email });
@@ -62,17 +112,16 @@ router.post("/deadlineReminder", async (req, res) => {
   const body = `Last date to apply for ${collegeFind.name} is 31-01-2021`;
   const message = constructTemplate(":)", status, body);
 
-   //firebase
-   var payload = {
-    notification : {
-        title: "Reminder!",
-        body: `Last date to apply for ${collegeFind.name} is 31-01-2021`
+  //firebase
+  var payload = {
+    notification: {
+      title: "Reminder!",
+      body: `Last date to apply for ${collegeFind.name} is 31-01-2021`,
     },
-   
-   topic:"all"
-}
+    topic: "all",
+  };
 
-sendMessage(payload);
+  sendMessage(payload);
   for (let i = 0; i < collegeFind.subscribers.length; i++) {
     main(collegeFind.subscribers[i], "Tick-Tock", message);
   }

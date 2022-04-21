@@ -21,8 +21,13 @@ function CollegeCard({college}) {
       auth.setOpen(true);
     }
     try {
-      const data ={name : college.name, email: auth.user.email}
-      const res = await axios.post("http://localhost:5000/user/subscribe" ,data)
+      const data ={name : college.name, email: auth.user.email, collegeid : 5}
+      const res = await axios.post("http://localhost:5000/user/subscribe" ,data ,{
+        headers: {
+          "auth-token": localStorage.getItem("auth-token"),
+        },
+      }
+)
       if(res.data.success) toast.success(res.data.msg, { id: toastId });
     } catch (error) {
       //console.log(error.response);
@@ -31,7 +36,9 @@ function CollegeCard({college}) {
   }
   return (
     <div class="card" >
-      <img class="card-img-top" src={newyork} alt="Card image cap" onClick={()=> navigate('college/26')}/>
+      <img class="card-img-top" src={college.image} alt="Card image cap" onClick={()=> {
+        {college.collegeid ? navigate(`college/${college.collegeid}`): navigate('college/26') }
+        }}/>
       <div class="card-body">
         <h5 class="card-title college-name">{college.name}</h5>
         <p class="card-text">{college.city}, {college.state}</p>

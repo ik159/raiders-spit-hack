@@ -36,7 +36,7 @@ function NavBar() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a>About</a>
+              <a href="/mysubs">My Subscriptions</a>
             </li>
             <li>
               <a href="/profile">My Profile</a>

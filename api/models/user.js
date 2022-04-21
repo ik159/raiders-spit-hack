@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const College = require('./college')
 const OrganiserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -20,7 +21,10 @@ const OrganiserSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
-  subscribedTo : [String],
+  subscribedTo : [ {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "College",
+  },],
   enrolledAt : {
     type :Date,
     default: Date.now(),

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+ const User = require('./user');
 const CollegeSchema = new mongoose.Schema({
   collegeid :{
       type: Number,
@@ -33,7 +34,10 @@ const CollegeSchema = new mongoose.Schema({
     require: true,
   },
   coordinates: [Number],
-  subscribers : [String],
+  subscribers :[ {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },]
 });
 
 module.exports = {

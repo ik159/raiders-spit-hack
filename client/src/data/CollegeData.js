@@ -1,5 +1,6 @@
-export const features = [
+export const features =  [
     {
+        "collegeid": 1,
         "name": "Rashtriya Sanskrit Vidyapeeth",
         "address": "Rashtriya Sanskrit Vidyapeeth ",
         "city":"Tirupati",
@@ -10,9 +11,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 2500,
         "rating" : 4.23,
-        "ranking" : 1
+        "ranking" : 1,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 2,
         "name": "Sri Sathya Sai Institute of Higher Learning",
         "address": "Sri Sathya Sai Institute of Higher Learning",
         "city":"Prasanthinilayam",
@@ -23,9 +26,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.43,
-        "ranking" : 2
+        "ranking" : 2,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 3,
         "name": "International Institute of Information Technology",
         "address": "International Institute of Information Technology, Gachibowli",
         "city":"Hyderabad",
@@ -36,9 +41,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 2800,
         "rating" : 4.53,
-        "ranking" : 3
+        "ranking" : 3,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 4,
         "name": "Gandhi Institute of Technology and Management",
         "address": "Gandhi Institute of Technology and Management(GITAM), Gandhi Nagar Campus, Rushikonda",
         "city":"Visakhapatnam",
@@ -49,9 +56,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 5000,
         "rating" : 4.10,
-        "ranking" : 4
+        "ranking" : 4,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 5,
         "name": "North Eastern Regional Institute of Science and Technology",
         "address": "North Eastern Regional Institute of Science and Technology, Nirjuli",
         "city":"Itanagar",
@@ -62,9 +71,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 4800,
         "rating" : 4.43,
-        "ranking" : 5
+        "ranking" : 5,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 6,
         "name": "Bihar Yoga Bharati",
         "address": " Bihar Yoga Bharati,Ganga Darshan Fort, Munger",
         "city":"Munger",
@@ -75,9 +86,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 50,
         "rating" : 4.9,
-        "ranking" : 6
+        "ranking" : 6,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 7,
         "name": "Nava Nalanda Mahavihara",
         "address": "Nava Nalanda Mahavihara,Nalanda",
         "city":"Nalanda",
@@ -88,9 +101,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 8000,
         "rating" : 3.99,
-        "ranking" : 7
+        "ranking" : 7,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 8,
         "name": "Punjab Engineering College",
         "address": "Punjab Engineering College Sector -12",
         "city":"Chandigarh",
@@ -101,10 +116,12 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 4100,
         "rating" : 4.19,
-        "ranking" : 8
+        "ranking" : 8,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     
     {
+        "collegeid": 9,
         "name": "Gujarat Vidyapith",
         "address": "Gujarat Vidyapith, PO Navjivan, Near Income Tax Office Ashram Road",
         "city":"Ahmedabad",
@@ -115,9 +132,11 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3969,
         "rating" : 3.87,
-        "ranking" : 9
+        "ranking" : 9,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
+        "collegeid": 10,
         "name": "Sumandeep Vidyapeeth",
         "address": " Sumandeep Vidyapeeth, P.O. Piparia, Tal. Vaghodia",
         "city":"Vadodara",
@@ -128,7 +147,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 4269,
         "rating" : 4.62,
-        "ranking" : 10
+        "ranking" : 10,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "National Dairy Research Institute",
@@ -141,7 +161,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 896,
         "rating" : 4.87,
-        "ranking" : 11
+        "ranking" : 11,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "National Brain Research Centre",
@@ -154,7 +175,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 8596,
         "rating" : 3.90,
-        "ranking" : 12
+        "ranking" : 12,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Maharishi Markandeshwar University",
@@ -167,7 +189,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 1599,
         "rating" : 4.20,
-        "ranking" : 13
+        "ranking" : 13,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Birla Institute of Technology, Mesra",
@@ -180,7 +203,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 999,
         "rating" : 4.69,
-        "ranking" : 14
+        "ranking" : 14,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Indian School of Mines",
@@ -193,7 +217,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 452,
         "rating" : 4.89,
-        "ranking" : 15
+        "ranking" : 15,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Indian Institute of Science",
@@ -206,7 +231,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 99,
         "rating" : 4.93,
-        "ranking" : 16
+        "ranking" : 16,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Manipal Academy of Higher Education",
@@ -219,7 +245,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 969,
         "rating" : 4.59,
-        "ranking" : 17
+        "ranking" : 17,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "National Institute of Mental Health and Neuro Sciences",
@@ -232,7 +259,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 859,
         "rating" : 4.14,
-        "ranking" : 18
+        "ranking" : 18,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Swami Vivekananda Yoga Anusandhana Samsthana",
@@ -245,7 +273,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 856,
         "rating" : 4.29,
-        "ranking" : 19
+        "ranking" : 19,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Jawaharlal Nehru Centre for Advanced Scientific Research",
@@ -258,7 +287,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3658,
         "rating" : 4.11,
-        "ranking" : 20
+        "ranking" : 20,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "International Institute of Information Technology",
@@ -271,7 +301,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 5269,
         "rating" : 4.10,
-        "ranking" : 21
+        "ranking" : 21,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "K.L.E Academy of Higher Education and Research",
@@ -284,7 +315,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 859,
         "rating" : 4.1,
-        "ranking" : 22
+        "ranking" : 22,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Sri Devaraj Urs Academy of Higher Education and Research",
@@ -297,7 +329,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 2678,
         "rating" : 4.08,
-        "ranking" : 23
+        "ranking" : 23,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Yenepoya University",
@@ -310,7 +343,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 2589,
         "rating" : 3.93,
-        "ranking" : 24
+        "ranking" : 24,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "BLDE University",
@@ -323,7 +357,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 1458,
         "rating" : 4.21,
-        "ranking" : 25
+        "ranking" : 25,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Jagadguru Sri Shivarathreeswara University",
@@ -336,7 +371,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 4259,
         "rating" : 4.01,
-        "ranking" : 26
+        "ranking" : 26,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Sri Siddhartha Academy of Higher Education",
@@ -349,7 +385,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3685,
         "rating" : 4.22,
-        "ranking" : 27
+        "ranking" : 27,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Nitte University",
@@ -362,7 +399,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.56,
-        "ranking" : 28
+        "ranking" : 28,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Christ College",
@@ -375,7 +413,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.71,
-        "ranking" : 29
+        "ranking" : 29,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Kerala Kalamandalam",
@@ -388,7 +427,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.09,
-        "ranking" : 30
+        "ranking" : 30,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Indian Institute of Space Science and Technology",
@@ -401,7 +441,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.08,
-        "ranking" : 31
+        "ranking" : 31,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Lakshmibai National Institute of Physical Education",
@@ -414,7 +455,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.03,
-        "ranking" : 32
+        "ranking" : 32,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Indian Institute of Information Technology and Management",
@@ -427,7 +469,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.10,
-        "ranking" : 33
+        "ranking" : 33,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Bharati Vidyapeeth",
@@ -440,7 +483,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 5210,
         "rating" : 4.78,
-        "ranking" : 34
+        "ranking" : 34,
+        "image": "http://bvp.bharatividyapeeth.edu/images/bvp_homepage.jpg"
     },
     {
         "name": "Indira Gandhi Institute of Development Research",
@@ -453,7 +497,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.14,
-        "ranking" : 35
+        "ranking" : 35,
+        "image" : "https://www.careerindia.com/img/2014/02/06-igidrmumbai.jpg"
     },
     {
         "name": "Defence Institute Of Advanced Technology",
@@ -466,7 +511,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 2589,
         "rating" : 4.63,
-        "ranking" : 36
+        "ranking" : 36,
+        "image": "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/964/2017/9/5/Defence-Institute-of-Advanced-Technology-Pune-(3).jpg"
     },
     {
         "name": "Central Institute of Fisheries Education",
@@ -475,11 +521,12 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [19.14047883809299, 72.81631301795477],
         "cutoff": 34,
-        "category":"Engineering",
+        "category":"Arts",
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.58,
-        "ranking" : 37
+        "ranking" : 37,
+        "image" : "https://images.shiksha.com/mediadata/images/1533124717phpYbZEOg_g.png"
     },
     {
         "name": "Deccan College Post-Graduate and Research Institute",
@@ -492,7 +539,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 452,
         "rating" : 4.78,
-        "ranking" : 38
+        "ranking" : 38,
+        "image" :"https://images.indianexpress.com/2021/11/Deccan-College-Post-Graduate-and-Research-Institute.jpg"
     },
     {
         "name": "Tata Institute of Social Sciences",
@@ -502,10 +550,11 @@ export const features = [
         "coordinates": [19.045588651840912, 72.91248395655644],
         "cutoff": 34,
         "category":"Engineering",
-        "deadline": "22-02-2022",
+        "deadline": "29-03-2022",
         "cutoffrank" : 3600,
         "rating" : 4.56,
-        "ranking" : 39
+        "ranking" : 39,
+        "image" : "https://images.collegedunia.com/public/college_data/images/appImage/25729_TISS_APP.jpg?mode=stretch"
     },
     {
         "name": "International Institute for Population Sciences",
@@ -514,11 +563,12 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [19.050156518771576, 72.91487097190092],
         "cutoff": 34,
-        "category":"Engineering",
-        "deadline": "22-02-2022",
+        "category":"Research",
+        "deadline": "16-04-2022",
         "cutoffrank" : 3600,
         "rating" : 4.14,
-        "ranking" : 40
+        "ranking" : 40,
+        "image": "https://images.hindustantimes.com/img/2021/02/10/550x309/1_Img_960x540_Land_1612959595025_1612959616127.jpg"
     },
     {
         "name": "Tilak Maharashtra Vidyapeeth",
@@ -531,7 +581,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 4896,
         "rating" : 4.11,
-        "ranking" : 41
+        "ranking" : 41,
+        "image" : "https://images.collegedunia.com/public/college_data/images/appImage/25730_TMV_NEW.jpg?mode=stretch"
     },
     {
         "name": "Gokhale Institute of Politics & Economics",
@@ -540,11 +591,13 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [18.521134839284347, 73.8381134053479],
         "cutoff": 34,
-        "category":"Engineering",
-        "deadline": "22-02-2022",
+        "category":"Economics",
+        "deadline": "11-02-2022",
         "cutoffrank" : 569,
         "rating" : 4.78,
-        "ranking" : 42
+        "ranking" : 42,
+        "image" : "https://images.shiksha.com/mediadata/images/1490610661phpEc2PyS.jpeg"
+
     },
     {
         "name": "SYMBIOSIS International University",
@@ -553,11 +606,12 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [18.52368025628387, 73.83179517755856],
         "cutoff": 34,
-        "category":"Engineering",
+        "category":"Arts",
         "deadline": "22-02-2022",
         "cutoffrank" : 789,
         "rating" : 4.74,
-        "ranking" : 43
+        "ranking" : 43,
+        "image": "https://images.indianexpress.com/2020/03/Symbiosis-759.jpg"
     },
     {
         "name": "Tata Institute of Fundamental Research",
@@ -566,11 +620,12 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [18.907956691388243, 72.80979016392399],
         "cutoff": 34,
-        "category":"Engineering",
-        "deadline": "22-02-2022",
+        "category":"Research",
+        "deadline": "01-12-2022",
         "cutoffrank" : 3600,
         "rating" : 4.57,
-        "ranking" : 44
+        "ranking" : 44,
+        "image" : "https://www.cbs.ac.in/assets/site_content/newdemo/home_3098_3038.jpg"
     },
     {
         "name": "Padmashree Dr. D.Y.Patil Vidyapeeth",
@@ -583,7 +638,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.36,
-        "ranking" : 45
+        "ranking" : 45,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Narsee Monjee Institute of Management Studies",
@@ -592,11 +648,12 @@ export const features = [
         "state":"Maharashtra",
         "coordinates": [19.102664352298014, 72.843521622606],
         "cutoff": 34,
-        "category":"Engineering",
+        "category":"Commerce",
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.02,
-        "ranking" : 46
+        "ranking" : 46,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Dr.D.Y.Patil Vidyapeeth",
@@ -609,7 +666,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 5122,
         "rating" : 4.01,
-        "ranking" : 47
+        "ranking" : 47,
+        "image" : "https://medical.dpu.edu.in/img/home/about-us.jpg"
     },
     {
         "name": "Pravara Institute of Medical Sciences",
@@ -622,7 +680,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.51,
-        "ranking" : 48
+        "ranking" : 48,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Datta Meghe Institute of Medical Sciences",
@@ -635,7 +694,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.50,
-        "ranking" : 49
+        "ranking" : 49,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Krishna Institute of Medical Sciences",
@@ -648,7 +708,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.63,
-        "ranking" : 50
+        "ranking" : 50,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "Homi Bhabha National Institute",
@@ -661,7 +722,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.41,
-        "ranking" : 51
+        "ranking" : 51,
+        "image" : "https://images.shiksha.com/mediadata/images/1560408708phpROHEXQ.jpeg"
     },
     {
         "name": "D. Y. Patil Medical College",
@@ -674,7 +736,8 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.96,
-        "ranking" : 52
+        "ranking" : 52,
+        "image" :"https://images.shiksha.com/mediadata/images/1500363327phpqPO4Ys.jpeg"
     },
     {
         "name": "MGM Institute of Health Sciences",
@@ -687,10 +750,12 @@ export const features = [
         "deadline": "22-02-2022",
         "cutoffrank" : 3600,
         "rating" : 4.28,
-        "ranking" : 53
+        "ranking" : 53,
+        "image" : "https://images.shiksha.com/mediadata/images/1550207966phpU3lv0y.jpeg"
     }
 ]
 
+
 export default {
-  features,
-};
+    features,
+  };
