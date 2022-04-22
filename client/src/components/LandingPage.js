@@ -204,6 +204,8 @@ function LandingPage() {
         citylong={citylong}
         radius={radius}
         city={city}
+        cutoffank={cutoffrank}
+        rating={rating}
       />
       <div className="college-list personal">
       <h1>Personal Recommendation For You</h1>
@@ -235,7 +237,7 @@ function LandingPage() {
   );
 }
 
-function CollegeList({ citylang, citylong, radius, city }) {
+function CollegeList({ citylang, citylong, radius, city ,cutoffank , rating}) {
   return (
     <div className="college-list">
       <h1>{city} Colleges</h1>
@@ -250,7 +252,7 @@ function CollegeList({ citylang, citylong, radius, city }) {
                 u.coordinates[1]
               );
               //console.log(d);
-              if (radius > d) return u;
+              if (radius > d && cutoffank > u.cutoffrank && u.rating > rating) return u;
             })
             .map((college, ind) => (
               <Col xs="4">

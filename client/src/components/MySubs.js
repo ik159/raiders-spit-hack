@@ -2,6 +2,7 @@ import React,{useState , useEffect} from 'react';
 import axios from 'axios';
 import CollegeCard from './CollegeCard';
 import { Container, Col, Row } from "react-bootstrap";
+import NavBar from './NavBar';
 
 function MySubs() {
     const [collegeDets, setCollegeDets] = useState();
@@ -37,7 +38,10 @@ function MySubs() {
       }
   return (
       <>
-      <div>MySubs</div>
+      <section  id="back">
+          <NavBar />
+        </section>
+      <div style={{textAlign: 'center' , fontSize : "40px",margin : "10px", color : "white"}}>My Subscriptions</div>
       <Container>
         <Row>
         {collegeDets && collegeDets.subscribedTo.map((college ) => {

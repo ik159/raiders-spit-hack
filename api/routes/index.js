@@ -31,16 +31,18 @@ router.post("/user/register", userRegister);
 router.post("/college/register", collegeRegister);
 router.post("/user/login", userLogin);
 router.get("/user/fetchMe", verify, async (req, res) => {
-  const userfind = await User.findById(req.user);
+  const userfind = await User.findById(req.user).populate("subscribedTo");
   res.json({ data: userfind, success: true });
 });
-router.get("/getCollegeById", async (req, res) => {
+router.post("/getCollegeById", async (req, res) => {
+  console.log(req.body);
   const college = await College.findOne({ collegeid : req.body.collegeid })
-  res.json({ data: college, success: true });
+  console.log(college);
+ return  res.status(200).send({ data: college, success: true });
 });
-router.get("/getAllColleges", verify, async (req, res) => {
+router.post("/getAllColleges", verify, async (req, res) => {
   const colleges = await User.findById(req.user);
-  res.json({ data: colleges, success: true });
+  return res.json({ data: colleges, success: true });
 });
 router.get("/getsubs", verify, async (req, res) => {
   const user = await User.findById(req.user).populate("subscribedTo");
@@ -106,17 +108,17 @@ router.post("/user/subscribe", verify, async (req, res) => {
   res.json({ data: userfind, success: true });
 });
 
-router.post("/deadlineReminder", async (req, res) => {
-  const collegeFind = await College.findOne({ collegeid: req.body.collegeid });
+router.get("/deadlineReminder", async (req, res) => {
+  //const collegeFind = await College.findOne({ collegeid: req.body.collegeid });
   const status = "Deadline Nearing";
-  const body = `Last date to apply for ${collegeFind.name} is 31-01-2021`;
+  const body = `Last date to apply is 31-01-2021`;
   const message = constructTemplate(":)", status, body);
 
   //firebase
   var payload = {
     notification: {
       title: "Reminder!",
-      body: `Last date to apply for ${collegeFind.name} is 31-01-2021`,
+      body: `Last date to apply is 30-04-2021`,
     },
     topic: "all",
   };

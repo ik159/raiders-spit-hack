@@ -55,6 +55,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/college/:id" element={<CollegeDetail />} />
+          <Route path="/mysubs/college/:id" element={<CollegeDetail />} />
           <Route
             exact
             path="/profile"

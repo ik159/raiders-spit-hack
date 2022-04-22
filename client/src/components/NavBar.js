@@ -28,19 +28,21 @@ function NavBar() {
   return (
     <>
       <nav>
-        <a><img src={logo}/> Finder-Binder</a>
+        <a href="/" style={{color : "white" ,textDecoration : "none"}}><img src={logo}/> Finder-Binder</a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onClick={hideMenu}></i>
           <ul>
             <li>
               <a href="/">Home</a>
             </li>
-            <li>
+            {auth.user && <>
+              <li>
               <a href="/mysubs">My Subscriptions</a>
             </li>
             <li>
               <a href="/profile">My Profile</a>
             </li>
+            </>}
             {auth.user ? (
               <li onClick={auth.logout}>
                 <a>Logout</a>

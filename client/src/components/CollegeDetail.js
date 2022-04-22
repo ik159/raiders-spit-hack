@@ -90,17 +90,19 @@ function CollegeDetail() {
   const [collegeDets, setCollegeDets] = useState();
   const [loadingCollege, setloadingCollege] = useState(true)
   const getCollegeDets = async () => {
-    let collegeidFinal
-    if (collegeid == 26) {
-      collegeidFinal= 5;
-    } else {
-      collegeidFinal= collegeid;
-    }
-    const data = {
-      collegeid: collegeidFinal,
-    };
+    // let collegeidFinal
+    // if (collegeid == 26) {
+    //   collegeidFinal= 5;
+    // } else {
+    //   collegeidFinal= collegeid;
+    // }
+    // const data = {
+    //   collegeid: id,
+    // };
+    //console.log(data);
+    const senddata ={ collegeid : id}
     try {
-      const res = await axios.get("http://localhost:5000/getCollegeById", data);
+      const res = await axios.post("http://localhost:5000/getCollegeById", senddata);
       if (res.data.success) {
         console.log(res.data.data);
         setCollegeDets(res.data.data);
@@ -117,8 +119,9 @@ function CollegeDetail() {
     //console.log(category)
   };
 
-  const { collegeid } = useParams();
+  const { id } = useParams();
   useEffect(() => {
+    console.log(id);
     getCollegeDets();
   }, []);
 
@@ -129,7 +132,8 @@ function CollegeDetail() {
   }
   return (
     <>
-      <div className="college-detail">
+      {collegeDets && <>
+        <div className="college-detail">
         <section className={`sub-header ${collegeDets.image}`} id="back">
           <NavBar />
         </section>
@@ -231,6 +235,7 @@ function CollegeDetail() {
           </div>
         </div>
       </div>
+      </>}
     </>
   );
 }
