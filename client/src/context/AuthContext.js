@@ -71,6 +71,7 @@ export default function AuthProvider({ children }) {
     try {
       setuser(null);
       localStorage.removeItem('auth-token');
+      navigate('/');
     } catch (err) {
       throw err;
     }
